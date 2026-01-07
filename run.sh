@@ -25,8 +25,15 @@ CP-fleetssl
 
 for service in "${services[@]}"; do
     name="${base}${service}"
-    echo "Auto running: $name"
-    sleep 1
+
+    echo "Starting $name"
+    
+    # এখানে common কাজটা হবে
+    # উদাহরণ হিসেবে শুধু delay দিলাম
+    sleep 2
+
+    echo "$name finished"
+    echo "---------------------"
 done
 
-echo "All done"
+echo "All license process completed"
